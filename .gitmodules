@@ -1,0 +1,9 @@
+[submodule "uboot"]
+	path = uboot
+	url = https://github.com/redstonee/u-boot-rv110x
+[submodule "kernel"]
+	path = kernel
+	url = https://github.com/redstonee/linux-rv110x
+[submodule "buildroot"]
+	path = buildroot
+	url = https://github.com/buildroot/buildroot

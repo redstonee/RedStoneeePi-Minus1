@@ -1,0 +1,5 @@
+/env/*.img
+/*.ubi
+/nand.img
+/rootfs.img
+/root_overlay/usr/lib/modules
