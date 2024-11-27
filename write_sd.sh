@@ -10,7 +10,7 @@ read choice
 #[ ( "$choice" == "y" ) -a  ( "$choice" == "Y" ) ] && exit 1
 
 dd if=env/env_sd.img of=$device
-#dd if=idblock.img of=$device bs=1k seek=32
+dd if=idblock.img of=$device bs=1k seek=32
 dd if=uboot/u-boot.img of=$device bs=1k seek=288
-#dd if=kernel/zboot.img of=$device bs=1k seek=1024
-#dd if=rootfs.img of=nand.img bs=1M seek=6
+dd if=kernel/zboot.img of=$device bs=1k seek=1024
+dd if=buildroot/output/images/rootfs.ext2 of=$device bs=1M seek=6
